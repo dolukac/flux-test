@@ -5577,6 +5577,9 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
+        envFrom:
+        - configMapRef:
+            name: proxy-config
         image: ghcr.io/fluxcd/helm-controller:v0.24.0
         imagePullPolicy: IfNotPresent
         livenessProbe:
@@ -5659,6 +5662,9 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
+        envFrom:
+        - configMapRef:
+            name: proxy-config
         image: ghcr.io/fluxcd/kustomize-controller:v0.28.0
         imagePullPolicy: IfNotPresent
         livenessProbe:
@@ -5832,6 +5838,9 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
+        envFrom:
+        - configMapRef:
+            name: proxy-config
         image: ghcr.io/fluxcd/source-controller:v0.29.0
         imagePullPolicy: IfNotPresent
         livenessProbe:
