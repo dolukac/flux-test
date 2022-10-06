@@ -1,0 +1,16 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: nrf
+  namespace: finaltest
+spec:
+  chart:
+    spec:
+      chart: ./repo/free5gc-nrf-0.1.1.tgz
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: GitRepository
+        name: final
+  interval: 10s
+
