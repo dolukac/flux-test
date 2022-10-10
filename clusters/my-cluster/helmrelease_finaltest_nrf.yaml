@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ./repo/free5gc-nrf-0.2.1.tgz
+      chart: ./repo/free5gc-nrf-0.1.1.tgz
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
