@@ -4,4 +4,3 @@ resources:
 - proxyconfig.yaml
 - gotk-components.yaml
 - gotk-sync.yaml
-- namespace_finaltest.yaml
